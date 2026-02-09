@@ -1,0 +1,141 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: #f3c0d5;
+  color: #333;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+.center {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttons button {
+  padding: 12px 25px;
+  margin: 10px;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  background: #ff5c8a;
+  color: white;
+}
+
+#message {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #8d043d;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  padding: 20px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.top {
+  margin-top: 20px;
+}
+
+.subtitle {
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.next {
+  margin: 20px;
+  padding: 10px 25px;
+  border-radius: 20px;
+  border: none;
+  background: #ff5c8a;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.walking-girl {
+  position: fixed;
+  bottom: 0;
+  left: -200px;
+  width: 200px;
+  animation: walkAcross 8s linear infinite;
+  z-index: 1;
+}
+
+h1 {
+  color: white;
+  text-shadow:
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    2px 2px 0 #000;
+}
+
+p {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 20px 30px;
+  border-radius: 20px;
+  font-family: "Dancing Script", cursive;
+  font-size: 26px;
+  font-style: italic;
+  line-height: 1.6;
+  max-width: 900px;
+  margin: 30px auto;
+  color: #8d043d;
+  background: rgba(255, 255, 255, 0.18);
+  padding: 30px 40px;
+  border-radius: 25px;
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.25);
+  border: 2px solid rgba(255, 255, 255, 0.35);
+    transition: 0.4s ease;
+    width: 90%;              
+  max-width: 900px;        
+  font-size: 18px;        
+  padding: 20px
+}
+p:hover {
+  transform: scale(1.02);
+  background: rgba(255, 255, 255, 0.25);
+}
+
+@keyframes walkAcross {
+  from {
+    left: -200px;
+  }
+
+  to {
+    left: 100%;
+  }
+
+@media (max-width: 768px) {
+
+  h1 {
+    font-size: 28px;
+  }
+
+  p {
+    font-size: 16px;
+    padding: 15px;
+    line-height: 1.6;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  .walking-girl {
+    width: 120px;   /* gif bhi chhoti */
+  }
+}
+}
